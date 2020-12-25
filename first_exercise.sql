@@ -115,6 +115,12 @@ WHERE CHAR_LENGTH(CITY)=(SELECT CHAR_LENGTH(CITY)
 FROM STATION ORDER BY CHAR_LENGTH(CITY) DESC LIMIT  1)
 ORDER BY CITY DESC LIMIT 1)
 ORDER BY CHAR_LENGTH(CITY);
+
+# The first step to creating this code is to select the city database and within the city database,
+select the station table while usig the where command to limit the leangth of each city name.
+# Also use the UNION All operator to combine the columns with city and the station table.
+#coppy the first five lines of code and use it to gerate another section of code that orders the charecter length in desc order rather than asc seen in the first few lines.
+
 #3)
 #Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
 
